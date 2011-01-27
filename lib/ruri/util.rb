@@ -1,6 +1,6 @@
 module Ruri
   module Util
-    PAGER = 'less -R -f'
+    PAGER = 'less -R -f -X'
     class << self
       def less(str = nil)
         Tempfile.open('jugyo_is_very_cool') do |file|
