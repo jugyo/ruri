@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>バージョン:1.9.2 > クエリ:gsub | るりまサーチ</title>
+  <link rel="search"
+        type="application/opensearchdescription+xml"
+        title="るりまサーチ"
+        href="/ja/search/version:1.9.2/open_search_description.xml" />
+  <link rel="stylesheet" href="/ja/search/css/rurema.css"
+        type="text/css" media="all" />
+  <link rel="shortcut icon" href="/ja/search/favicon.ico" />
+  <script src="/ja/search/javascripts/jquery.min.js"
+          type="text/javascript"></script>
+</head>
+<body>
+  <div id="top" class="header">
+    <h1><a href="/ja/search/"><img src="/ja/search/images/rurema-search-title.png" alt="るりまサーチ" title="るりまサーチ" /></a></h1>
+<div class="description">最速Rubyリファレンスマニュアル検索！</div>
+<div class="search-form">
+  <form method="POST" action="./">
+    <input type="text" class="query" name="query" value="gsub" />
+    <input type="submit" value="検索" />
+  </form>
+</div>
+
+  </div>
+  <div class="content">
+    <div class="search-header">
+  <div class="version-select">
+    <ul>
+      <li class="version-select">
+	<a class="version-select-link" href="/ja/search/query:gsub/">すべて</a>
+      </li>
+  
+      <li class="version-select">
+	<a class="version-select-link" href="/ja/search/query:gsub/version:1.8.6/">1.8.6</a>
+      </li>
+  
+      <li class="version-select">
+	<a class="version-select-link" href="/ja/search/query:gsub/version:1.8.7/">1.8.7</a>
+      </li>
+  
+      <li class="version-select">
+	<a class="version-select-link" href="/ja/search/query:gsub/version:1.9.1/">1.9.1</a>
+      </li>
+  
+      <li class="version-select-current">
+	<span class="version-select-text">1.9.2</span>
+      </li>
+  
+    </ul>
+  </div>
+
+  <div class="statistics">
+    <span class="total">26件ヒット</span>
+  
+    <span class="showen-records">
+      [1-26件を表示]
+    </span>
+  
+    <span class="elapsed-time">（0.013秒）</span>
+  </div>
+
+  <div class="topic-path">
+    <span class="topic-element"><span class="all-items"><a href="/ja/search/">トップページ</a></span></span> &gt; <span class="topic-element"><img class="parameter-version" alt="バージョン" title="バージョン" src="/ja/search/images/version-icon.png" />:<a href="./../">1.9.2</a><a class="drop-condition" href="../../query:gsub/"><img alt="[x]" title="条件を削除" src="/ja/search/images/drop-condition-icon.png" /></a></span> &gt; <span class="topic-element"><img class="parameter-query" alt="クエリ" title="クエリ" src="/ja/search/images/query-icon.png" />:gsub<a class="drop-condition" href="../"><img alt="[x]" title="条件を削除" src="/ja/search/images/drop-condition-icon.png" /></a></span>
+  </div>
+</div>
+
+<div class="search-result">
+<div class="drilldowns">
+  <div class="drilldown list-box">
+    <h2 class="drilldown-type">種類</h2>
+    <ul class="drilldown-items">
+  
+      <li class="drilldown-item-instance-method">
+        <a href="./type:instance-method/">インスタンスメソッド</a>
+        (19)
+      </li>
+  
+      <li class="drilldown-item-document">
+        <a href="./type:document/">文書</a>
+        (5)
+      </li>
+  
+      <li class="drilldown-item-library">
+        <a href="./type:library/">ライブラリ</a>
+        (1)
+      </li>
+  
+      <li class="drilldown-item-singleton-method">
+        <a href="./type:singleton-method/">シングルトンメソッド</a>
+        (1)
+      </li>
+  
+    </ul>
+  </div>
+</div>
+
+<div class="result">
+  <dl class="entries">
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/gsub.html">String<wbr />#<wbr />gsub(pattern<wbr />,<wbr /> replace) -&gt; String</a>
+      <span class="score">(1235)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中で pattern にマッチする部分全てを
+文字列 replace で置き換えた文字列を生成し返します。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/gsub.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>e    pattern で指定した文字列と置き換える文字列
+
+例:
+    p 'abcdefg'.<span class="keyword">gsub</span>(/def/, '!!')          # =&gt; &quot;abc!!g&quot;
+    p 'abcabc'.<span class="keyword">gsub</span>(/b/, '&lt;&lt;\&amp;&gt;&gt;')         # =&gt; &quot;a&lt;&lt;b&gt;&gt;ca&lt;&lt;b&gt;&gt;c&quot;
+    p 'xxbbxbb'.<span class="keyword">gsub</span>(/x+(b+)/, 'X&lt;&lt;\1&gt;&gt;')  # =&gt; &quot;X&lt;&lt;bb&gt;&gt;X&lt;&lt;bb&gt;&gt;&quot;
+
+注意:
+
+第 2 引数 replace に $1 を<span class="separator">...</span></div><div class="snippet"><span class="separator">...</span>列が評価される時点ではまだ正規表現マッチが行われておらず、
+$1 がセットされていないからです。
+
+また、<span class="keyword">gsub</span> では「\」が部分文字列との置き換えという特別な意味を持つため、
+replace に「\」自身を入れたいときは
+「\」<span class="separator">...</span></div><div class="snippet"><span class="separator">...</span>
+    p 'xbbb-xbbb'.<span class="keyword">gsub</span>(/x(b+)/, &quot;#{$1}&quot;)   # =&gt; &quot;-&quot;        # NG
+    p 'xbbb-xbbb'.<span class="keyword">gsub</span>(/x(b+)/, &quot;\1&quot;)      # =&gt; &quot;1-1&quot;      # NG
+    p 'xbbb-xbbb'.<span class="keyword">gsub</span>(/x(b+)/, &quot;\\1&quot;)     # =&gt; &quot;bbb-bbb&quot;  # OK
+    p 'xbbb-xbbb'.<span class="keyword">gsub</span>(/x(b+)/, '\1')      # =&gt; &quot;bbb-bbb&quot;  # OK
+    p 'xbbb-xbbb'.<span class="keyword">gsub</span>(/x(b+)/, '\\1')     <span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%27/">Kernel$'</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%2B/">Kernel$+</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%241/">Kernel$1</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%60/">Kernel$`</a>
+        </li>
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23sub/">String#sub</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/Rake=3a=3aFileList/i/gsub.html">Rake<wbr />::<wbr />FileList<wbr />#<wbr />gsub(pattern<wbr />,<wbr /> replace) -&gt; Rake<wbr />::<wbr />FileList</a>
+      <span class="score">(1099)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+自身に含まれるファイルリストのそれぞれのエントリに対して String#gsub を実行し、
+結果を新しい Rake::FileList として返します。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/Rake=3a=3aFileList/i/gsub.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>に含まれるファイルリストのそれぞれのエントリに対して String#<span class="keyword">gsub</span> を実行し、
+結果を新しい Rake::FileList として返します。
+
+ 例:
+   FileList['lib/test/file', 'x/y'].<span class="keyword">gsub</span>(/\//, &quot;\\&quot;) # =&gt; ['lib\\test\\file', 'x\\y']
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Rake%3A%3AFileList/">Rake::FileList</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23gsub/">String#gsub</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/gsub.html">String<wbr />#<wbr />gsub(pattern) -&gt; Enumerator</a>
+      <span class="score">(1095)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中で pattern にマッチした部分を順番にブロックに渡し、
+その実行結果で置き換えます。
+ブロックなしの場合と違い、ブロックの中からは
+組み込み変数 $1, $2, $3, ... を問題なく参照できます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/gsub.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>ターンになります。
+
+@param pattern    置き換える文字列のパターン
+@return 置換した場合は self、置換しなかった場合は nil
+
+例:
+
+    p 'abcabc'.<span class="keyword">gsub</span>(/[bc]/) {|s| s.upcase }  #=&gt; &quot;aBCaBC&quot;
+    p 'abcabc'.<span class="keyword">gsub</span>(/[bc]/) { $&amp;.upcase }    #=&gt; &quot;aBCaBC&quot;
+
+@see String#sub
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%241/">Kernel$1</a>
+        </li>
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23sub/">String#sub</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/gsub.html">String<wbr />#<wbr />gsub(pattern) {|matched| <wbr />.<wbr /><wbr />.<wbr /><wbr />.<wbr /><wbr />.<wbr /> } -&gt; String</a>
+      <span class="score">(1095)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中で pattern にマッチした部分を順番にブロックに渡し、
+その実行結果で置き換えます。
+ブロックなしの場合と違い、ブロックの中からは
+組み込み変数 $1, $2, $3, ... を問題なく参照できます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/gsub.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>ターンになります。
+
+@param pattern    置き換える文字列のパターン
+@return 置換した場合は self、置換しなかった場合は nil
+
+例:
+
+    p 'abcabc'.<span class="keyword">gsub</span>(/[bc]/) {|s| s.upcase }  #=&gt; &quot;aBCaBC&quot;
+    p 'abcabc'.<span class="keyword">gsub</span>(/[bc]/) { $&amp;.upcase }    #=&gt; &quot;aBCaBC&quot;
+
+@see String#sub
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%241/">Kernel$1</a>
+        </li>
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23sub/">String#sub</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/gsub.html">String<wbr />#<wbr />gsub(pattern<wbr />,<wbr /> hash) -&gt; String</a>
+      <span class="score">(1095)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中の pattern にマッチした部分をキーにして hash を引いた値で置き換えます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/gsub.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>ash を引いた値で置き換えます。
+
+@param pattern    置き換える文字列のパターン
+@param hash       置き換える文字列を与えるハッシュ
+
+  hash = {'b'=&gt;'B', 'c'=&gt;'C'}
+  p &quot;abcabc&quot;.<span class="keyword">gsub</span>(/[bc]/){hash[$&amp;]} #=&gt; &quot;aBCaBC&quot;
+  p &quot;abcabc&quot;.<span class="keyword">gsub</span>(/[bc]/, hash)     #=&gt; &quot;aBCaBC&quot;
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+      </ul>
+      <p class="jump-to-top"><a href="#top">絞り込み条件を変える</a></p>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/gsub=21.html">String<wbr />#<wbr />gsub!(pattern<wbr />,<wbr /> replace) -&gt; self | nil</a>
+      <span class="score">(191)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中で pattern にマッチする部分全てを文字列 replace に破壊的に置き換えます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/gsub=21.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>弧の内容に置き換えられます。
+置換文字列内では \`、\'、\+ も使えます。
+これらは $`、$'、$+ に対応します。<span class="keyword">
+
+gsub</span>! は通常 self を変更して返しますが、
+置換が起こらなかった場合は nil を返します。
+
+@param pattern    置き換え<span class="separator">...</span></div><div class="snippet"><span class="separator">...</span>buf = &quot;String-String&quot;
+    buf.<span class="keyword">gsub</span>!(/in./, &quot;!!&quot;)
+    p buf   # =&gt; &quot;Str!!-Str!!&quot;
+
+    buf = &quot;String.String&quot;
+    buf.<span class="keyword">gsub</span>!(/in./, '&lt;&lt;\&amp;&gt;&gt;')
+    p buf   # =&gt; &quot;Str&lt;&lt;ing&gt;&gt;-Str&lt;&lt;ing&gt;&gt;&quot;
+
+注意:
+
+引数 replace の中で $1 を使うことはできません。
+replace は<span class="keyword"> gsub</span> メソッドの呼び出し<span class="separator">...</span></div><div class="snippet"><span class="separator">...</span>より先に評価されるので、
+まだ<span class="keyword"> gsub</span> の正規表現マッチが行われておらず、
+$1 がセットされていないからです。
+
+また、<span class="keyword">gsub</span> では「\」が部分文字列との置き換えという特別な意味を持つため、
+replace に「\」自身を入れたいと<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%27/">Kernel$'</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%2B/">Kernel$+</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%241/">Kernel$1</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%60/">Kernel$`</a>
+        </li>
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23sub/">String#sub</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/gsub=21.html">String<wbr />#<wbr />gsub!(pattern) -&gt; Enumerator</a>
+      <span class="score">(91)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中で pattern にマッチする部分全てを順番にブロックに渡し、
+その評価結果に置き換えます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/gsub=21.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>n    置き換える文字列のパターン
+@return 置換した場合は self、置換しなかった場合は nil
+
+例:
+    str = 'abcabc'
+    str.<span class="keyword">gsub</span>!(/b/) {|s| s.upcase }
+    p str    #=&gt; &quot;aBcaBc&quot;
+
+    str = 'abcabc'
+    str.<span class="keyword">gsub</span>!(/b/) { $&amp;.upcase }
+    p str    #=&gt; &quot;aBcaBc&quot;
+
+@see String#sub
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%241/">Kernel$1</a>
+        </li>
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23sub/">String#sub</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/gsub=21.html">String<wbr />#<wbr />gsub!(pattern) {|matched| <wbr />.<wbr /><wbr />.<wbr /><wbr />.<wbr /><wbr />.<wbr /> } -&gt; self | nil</a>
+      <span class="score">(91)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中で pattern にマッチする部分全てを順番にブロックに渡し、
+その評価結果に置き換えます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/gsub=21.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>n    置き換える文字列のパターン
+@return 置換した場合は self、置換しなかった場合は nil
+
+例:
+    str = 'abcabc'
+    str.<span class="keyword">gsub</span>!(/b/) {|s| s.upcase }
+    p str    #=&gt; &quot;aBcaBc&quot;
+
+    str = 'abcabc'
+    str.<span class="keyword">gsub</span>!(/b/) { $&amp;.upcase }
+    p str    #=&gt; &quot;aBcaBc&quot;
+
+@see String#sub
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%241/">Kernel$1</a>
+        </li>
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23sub/">String#sub</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/gsub=21.html">String<wbr />#<wbr />gsub!(pattern<wbr />,<wbr /> hash) -&gt; self | nil</a>
+      <span class="score">(91)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中の pattern にマッチした部分をキーにして hash を引いた値で置き換えます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/gsub=21.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>ash を引いた値で置き換えます。
+
+@param pattern    置き換える文字列のパターン
+@param hash       置き換える文字列を与えるハッシュ
+
+  hash = {'b'=&gt;'B', 'c'=&gt;'C'}
+  p &quot;abcabc&quot;.<span class="keyword">gsub</span>(/[bc]/){hash[$&amp;]} #=&gt; &quot;aBCaBC&quot;
+  p &quot;abcabc&quot;.<span class="keyword">gsub</span>(/[bc]/, hash)     #=&gt; &quot;aBCaBC&quot;
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/doc/spec=2fregexp.html">正規表現</a>
+      <span class="score">(89)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>正規表現 
+正規表現に関してはd:spec/literal#regexp、$&amp;、
+Regexp そして MatchData なども参照して下さい。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/doc/spec=2fregexp.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>マッチしていましたが、
+  常に文字列の末尾にもマッチするように変更されました。Regexp
+//emlist{
+        p &quot;\n&quot;.<span class="keyword">gsub</span>(/$/, &quot;o&quot;)
+        =&gt; &quot;o\n&quot;  (1.6)
+        =&gt; &quot;o\no&quot; (1.8) # 改行文字の前と文字列末尾の前で1回ずつ
+//}
+
+: .
+
+  改行を除く任意<span class="separator">...</span></div><div class="snippet"><span class="separator">...</span>マッチしていましたが、常に文字列の末尾にもマッチするように変更され
+  ました。Regexp
+//emlist{
+        p &quot;\n&quot;.<span class="keyword">gsub</span>(/\Z/, &quot;o&quot;)
+        =&gt; &quot;o\n&quot;   (1.6)
+        =&gt; &quot;o\no&quot;  (1.8) # 改行文字の前と文字列末尾の前で1回ずつ
+//}
+
+: \z
+
+  文字列末尾<span class="separator">...</span></div><div class="snippet"><span class="separator">...</span>所(の直後)にマッチ (幅を持たない)。
+  初回だけは先頭位置にマッチします(\Aと同じ)。
+
+  String#scan や、String#<span class="keyword">gsub</span> で使用できます。前回マッチし
+  た場所の後からマッチさせたい場合に使用します。
+
+  簡単な(あまり役に立た<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-document">
+            <a href="./type:document/">文書</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%26/">Kernel$&</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%241/">Kernel$1</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%242/">Kernel$2</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:MatchData/">MatchData</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Regexp/">Regexp</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23gsub/">String#gsub</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23scan/">String#scan</a>
+        </li>
+      </ul>
+      <p class="jump-to-top"><a href="#top">絞り込み条件を変える</a></p>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/Rake=3a=3aFileList/i/gsub=21.html">Rake<wbr />::<wbr />FileList<wbr />#<wbr />gsub!(pattern<wbr />,<wbr /> replace) -&gt; self</a>
+      <span class="score">(88)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+自身に含まれるファイルリストのそれぞれのエントリに対して String#gsub を実行します。
+自身を破壊的に変更します。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/Rake=3a=3aFileList/i/gsub=21.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>
+自身に含まれるファイルリストのそれぞれのエントリに対して String#<span class="keyword">gsub</span> を実行します。
+自身を破壊的に変更します。
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-class">
+          <a href="./class:Rake%3A%3AFileList/">Rake::FileList</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23gsub/">String#gsub</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/doc/news=2f1=2e8=2e0.html">1<wbr />.<wbr />6<wbr />.<wbr />8から1<wbr />.<wbr />8<wbr />.<wbr />0への変更点(まとめ)</a>
+      <span class="score">(45)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>1.6.8から1.8.0への変更点(まとめ) 
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/インタプリタの変更&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/追加されたクラス／モジュール&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/追加されたメソッド&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/追加された定数&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/拡張されたクラス／メソッド(互換性のある変更)&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/変更されたクラス／メソッド(互換性のない変更)&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/文法の変更&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/正規表現&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/Marshal&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/Windows 対応&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/廃止された(される予定の)機能&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/ライブラリ&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/拡張ライブラリAPI&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/バグ修正&gt;))
+* ((&lt;1.6.8から1.8.0への変更点(まとめ)/サポートプラットフォームの追加&gt;))</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/doc/news=2f1=2e8=2e0.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>
+: ((&lt;String#split|String/split&gt;)) [change]
+: ((&lt;String#sub|String/sub&gt;)), ((&lt;String#sub!|String/sub!&gt;)) [change]
+: ((&lt;String#<span class="keyword">gsub</span>|String/<span class="keyword">gsub</span>&gt;)), ((&lt;String#<span class="keyword">gsub</span>!|String/<span class="keyword">gsub</span>!&gt;)) [change]
+: ((&lt;String#~|String/~&gt;)) [obsolete]
+: ((&lt;String#=~|String/=~&gt;)) [obsolete]
+: ((&lt;組み込み変数/$;&gt;))   [com<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-document">
+            <a href="./type:document/">文書</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/WEBrick=3a=3aHTTPProxyServer/s/new.html">WEBrick<wbr />::<wbr />HTTPProxyServer<wbr />.<wbr />new(config<wbr />,<wbr /> default = WEBrick<wbr />::<wbr />Config<wbr />::<wbr />HTTP) -&gt; WEBrick<wbr />::<wbr />HTTPProxyServer</a>
+      <span class="score">(23)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+プロクシオブジェクトを生成して返します。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/WEBrick=3a=3aHTTPProxyServer/s/new.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>定した場合なにもしません。デフォルトは nil です。
+//emlist{
+ handler = proc{|req, res|
+   res.body.<span class="keyword">gsub</span>!(/です。/e, 'でんがな。')
+   res.body.<span class="keyword">gsub</span>!(/ます。/e, 'まんがな。')
+ }
+ s = WEBrick::HTTPProxyServer.new( { :ProxyContentHandler =&gt; handler } )
+//}
+: :ProxyV<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-singleton-method">
+            <a href="./type:singleton-method/">シングルトンメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Proc/">Proc</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:URI/">URI</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:WEBrick%3A%3AConfig%3A%3AHTTP/">WEBrick::Config::HTTP</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:WEBrick%3A%3AHTTPAuth%3A%3AProxyBasicAuth/">WEBrick::HTTPAuth::ProxyBasicAuth</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:WEBrick%3A%3AHTTPAuth%3A%3AProxyDigestAuth/">WEBrick::HTTPAuth::ProxyDigestAuth</a>
+        </li>
+        <li class="entry-related-entry-class">
+          <a href="./class:WEBrick%3A%3AHTTPProxyServer/">WEBrick::HTTPProxyServer</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:WEBrick%3A%3AHTTPRequest/">WEBrick::HTTPRequest</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:WEBrick%3A%3AHTTPResponse/">WEBrick::HTTPResponse</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/doc/news=2f1=2e9=2e0.html">ruby 1<wbr />.<wbr />9 feature</a>
+      <span class="score">(23)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>ruby 1.9 feature 
+ruby version 1.9.0 は開発版です。
+以下にあげる機能は将来削除されたり互換性のない仕様変更がなされるかもしれません。
+1.9.1 以降は安定版です。
+バグ修正がメインになります。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/doc/news=2f1=2e9=2e0.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>e とすると、GC を行えるすべての機会で GC を行います。
+
+=== 2005-12-15
+
+: sub           [obsolete]
+:<span class="keyword"> gsub</span>          [obsolete]
+: sub!          [obsolete]
+:<span class="keyword"> gsub</span>!         [obsolete]
+: chop          [obsolete]
+: chop!         [obsolete]
+: chomp         [obsolete]
+: chomp!        [o<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-document">
+            <a href="./type:document/">文書</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/sub=21.html">String<wbr />#<wbr />sub!(pattern) {|matched| <wbr />.<wbr /><wbr />.<wbr /><wbr />.<wbr /><wbr />.<wbr /> } -&gt; self | nil</a>
+      <span class="score">(13)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中で pattern にマッチした最初の部分をブロックに渡し、
+その評価結果へ破壊的に置き換えます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/sub=21.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>rn    置き換える文字列のパターン
+@return 置換した場合は self、置換しなかった場合は nil
+
+例:
+    str = 'abcabc'
+    str.sub!(/b/) {|s| s.upcase }
+    p str    #=&gt; &quot;aBcabc&quot;
+
+    str = 'abcabc'
+    str.sub!(/b/) { $&amp;.upcase }
+    p str    #=&gt; &quot;aBcabc&quot;
+
+@see String#<span class="keyword">gsub</span>
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%241/">Kernel$1</a>
+        </li>
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23gsub/">String#gsub</a>
+        </li>
+      </ul>
+      <p class="jump-to-top"><a href="#top">絞り込み条件を変える</a></p>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/sub=21.html">String<wbr />#<wbr />sub!(pattern<wbr />,<wbr /> replace) -&gt; self | nil</a>
+      <span class="score">(13)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中で pattern にマッチした最初の部分を文字列 replace へ破壊的に置き換えます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/sub=21.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>1}&quot;)       # NG
+    'abbbcd'.sub!(/a(b+)/, &quot;\1&quot;)          # NG
+    'abbbcd'.sub!(/a(b+)/, &quot;\\1&quot;)         # OK
+    'abbbcd'.sub!(/a(b+)/, '\\1')         # OK
+    'abbbcd'.sub!(/a(b+)/, '\1')          # OK
+    'abbbcd'.sub!(/a(b+)/) { $1 }         # OK   これがもっとも安全
+
+@see String#<span class="keyword">gsub</span>
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%27/">Kernel$'</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%2B/">Kernel$+</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%241/">Kernel$1</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%60/">Kernel$`</a>
+        </li>
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23gsub/">String#gsub</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/sub.html">String<wbr />#<wbr />sub(pattern) {|matched| <wbr />.<wbr /><wbr />.<wbr /><wbr />.<wbr /><wbr />.<wbr /> } -&gt; String</a>
+      <span class="score">(13)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中で pattern にマッチした最初の部分をブロックに渡し、
+その評価結果で置き換えた新しい文字列を返します。
+ブロックなしの sub と違い、ブロックの中からは
+組み込み変数 $1, $2, $3, ... を問題なく参照できます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/sub.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>した。
+しかし Ruby 1.8 以降では、その文字列そのものがパターンになります。
+
+@param pattern    置き換える文字列のパターン
+
+例:
+
+    p 'abcabc'.sub(/b/) {|s| s.upcase }  #=&gt; &quot;aBcabc&quot;
+    p 'abcabc'.sub(/b/) { $&amp;.upcase }    #=&gt; &quot;aBcabc&quot;
+
+@see String#<span class="keyword">gsub</span>
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%241/">Kernel$1</a>
+        </li>
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23gsub/">String#gsub</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/sub.html">String<wbr />#<wbr />sub(pattern<wbr />,<wbr /> replace) -&gt; String</a>
+      <span class="score">(13)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中で pattern にマッチした最初の部分を
+文字列 replace で置き換えた文字列を生成し返します。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/sub.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>実に防止し、コードの可読性を上げるには、
+\&amp; や \1 よりも下記のようにブロック付き形式の sub を使うべきです。
+
+    p 'xbbb-xbbb'.sub(/x(b+)/) { $1 }   # =&gt; &quot;bbb-xbbb&quot;  # OK
+
+    puts '\n'.sub(/\\/) { '\\\\' }      # =&gt; \\n        # OK
+
+@see String#<span class="keyword">gsub</span>
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%27/">Kernel$'</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%2B/">Kernel$+</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%241/">Kernel$1</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:Kernel%24%60/">Kernel$`</a>
+        </li>
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23gsub/">String#gsub</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/Net=3a=3aIMAP/i/append.html">Net<wbr />::<wbr />IMAP<wbr />#<wbr />append(mailbox<wbr />,<wbr /> message<wbr />,<wbr /> flags = nil<wbr />,<wbr /> date<wbr />_<wbr />time = nil)</a>
+      <span class="score">(12)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+Sends a APPEND command to append the message to the end of
+the mailbox.</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/Net=3a=3aIMAP/i/append.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>
+Sends a APPEND command to append the message to the end of
+the mailbox.
+
+ex).
+
+  imap.append(&quot;inbox&quot;, &lt;&lt;EOF.<span class="keyword">gsub</span>(/\n/, &quot;\r\n&quot;), [:Seen], Time.now)
+  Subject: hello
+  From: shugo@ruby-lang.org
+  To: shugo@ruby-lang.org
+  
+  hello world
+  EOF
+
+<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-class">
+          <a href="./class:Net%3A%3AIMAP/">Net::IMAP</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/encode=21.html">String<wbr />#<wbr />encode!(encoding<wbr />,<wbr /> from<wbr />_<wbr />encoding<wbr />,<wbr /> options = nil) -&gt; self</a>
+      <span class="score">(12)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+self を指定したエンコーディングに変換し、自身を置き換えます。引数を2つ
+与えた場合、第二引数は変換元のエンコーディングを意味します。さもなくば
+self のエンコーディングが使われます。変換後の self を返します。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/encode=21.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>コーディングを意味します。さもなくば
+self のエンコーディングが使われます。変換後の self を返します。
+
+(<span class="keyword">gsub</span>!などと異なり)変換が行なわれなくても self を返します。
+
+@param encoding       変換先のエンコーディングを表す文<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23encode/">String#encode</a>
+        </li>
+      </ul>
+      <p class="jump-to-top"><a href="#top">絞り込み条件を変える</a></p>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/encode=21.html">String<wbr />#<wbr />encode!(encoding<wbr />,<wbr /> options = nil) -&gt; self</a>
+      <span class="score">(12)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+self を指定したエンコーディングに変換し、自身を置き換えます。引数を2つ
+与えた場合、第二引数は変換元のエンコーディングを意味します。さもなくば
+self のエンコーディングが使われます。変換後の self を返します。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/encode=21.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>コーディングを意味します。さもなくば
+self のエンコーディングが使われます。変換後の self を返します。
+
+(<span class="keyword">gsub</span>!などと異なり)変換が行なわれなくても self を返します。
+
+@param encoding       変換先のエンコーディングを表す文<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:String%23encode/">String#encode</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/library/getoptlong.html">getoptlong</a>
+      <span class="score">(12)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>getoptlong は、GNU の getopt_long() とまったく同じ方式でコマンド
+行オプションの解析を行う Ruby のライブラリです。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/library/getoptlong.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>あなたのプログラム
+に足して下さい。
+
+    begin
+       parser.each_option do |name, arg|
+          eval &quot;$OPT_#{name.sub(/^--/, '').<span class="keyword">gsub</span>(/-/, '_').upcase} = '#{arg}'&quot;
+       end
+    rescue
+       exit(1)
+    end
+
+each_option メソッドは、常にオプション名を「正式名 (<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-library">
+            <a href="./type:library/">ライブラリ</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:GetoptLong/">GetoptLong</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:GetoptLong%3A%3AAmbiguousOption/">GetoptLong::AmbiguousOption</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:GetoptLong%3A%3AError/">GetoptLong::Error</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:GetoptLong%3A%3AInvalidOption/">GetoptLong::InvalidOption</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:GetoptLong%3A%3AMissingArgument/">GetoptLong::MissingArgument</a>
+        </li>
+        <li class="entry-related-entry-query">
+          <a href="/version:1.9.2/query:GetoptLong%3A%3ANeedlessArgument/">GetoptLong::NeedlessArgument</a>
+        </li>
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/doc/news=2f1=2e6=2e0.html">ruby 1<wbr />.<wbr />6 feature</a>
+      <span class="score">(12)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>ruby 1.6 feature 
+ruby version 1.6 は安定版です。この版での変更はバグ修正がメイン
+になります。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/doc/news=2f1=2e6=2e0.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span>,1].class
+        p Foo.new(&quot;foo&quot;).succ.class
+        p Foo.new(&quot;foo&quot;).reverse.class
+        p((Foo.new(&quot;foo&quot;) * 5).class)
+        p Foo.new(&quot;foo&quot;).<span class="keyword">gsub</span>(/foo/, &quot;bar&quot;).class
+        p Foo.new(&quot;foo&quot;).sub(/foo/, &quot;bar&quot;).class
+        p Foo.new(&quot;foo&quot;).ljust(10).class
+        p Foo.new(&quot;foo&quot;).rjust(10).cl<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-document">
+            <a href="./type:document/">文書</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/doc/news=2f1=2e8=2e4.html">ruby 1<wbr />.<wbr />8<wbr />.<wbr />4 feature</a>
+      <span class="score">(12)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>ruby 1.8.4 feature 
+ruby 1.8.4 での ruby 1.8.3 からの変更点です。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/doc/news=2f1=2e8=2e4.html">1.9.2</a>
+        </span>
+        <div class="snippets"><div class="snippet"><span class="separator">...</span> 28 09:21:49 2005  Hirokazu Yamamoto  &lt;ocean@m2.ccsnet.ne.jp&gt;
+#
+#       * lib/mkmf.rb (create_makefile): should not change sodir with
+#         dir.<span class="keyword">gsub</span>!. (bccwin32 failed to install third party exntesions)
+#         [ruby-dev:27834]
+#
+#なんとなく不要かな？
+#
+#    EXTOUT を使わず、ext<span class="separator">...</span></div></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-document">
+            <a href="./type:document/">文書</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+      </ul>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/sub=21.html">String<wbr />#<wbr />sub!(pattern<wbr />,<wbr /> hash) -&gt; String</a>
+      <span class="score">(3)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中の pattern にマッチした部分をキーにして hash を引いた値で破壊的に置き換えます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/sub=21.html">1.9.2</a>
+        </span>
+        <div class="snippets"></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+      </ul>
+      <p class="jump-to-top"><a href="#top">絞り込み条件を変える</a></p>
+    <dt class="entry-name">
+      <a href="/ja/1.9.2/method/String/i/sub.html">String<wbr />#<wbr />sub(pattern<wbr />,<wbr /> hash) -&gt; String</a>
+      <span class="score">(3)</span>
+    </dt>
+    <dd>
+      <div class="entry-summary">
+        <p>
+文字列中の pattern にマッチした部分をキーにして hash を引いた値で置き換えます。</p>
+      </div>
+      <div class="entry-description">
+        <span class="entry-version">
+          <a href="/ja/1.9.2/method/String/i/sub.html">1.9.2</a>
+        </span>
+        <div class="snippets"></div>
+      </div>
+      <ul class="entry-metadata">
+        <li class="entry-type">
+          <span class="entry-instance-method">
+            <a href="./type:instance-method/">インスタンスメソッド</a>
+          </span>
+        </li>
+      </ul>
+      <ul class="entry-related-entries">
+        <li class="entry-related-entry-class">
+          <a href="./class:String/">String</a>
+        </li>
+      </ul>
+    </dd>
+  </dl>
+</div>
+</div>
+
+  </div>
+  <div class="footer">
+    <p class="rurema">
+     検索対象のドキュメントは
+     <a href="http://redmine.ruby-lang.org/wiki/rurema">るりま</a>
+     の成果物です。
+    </p>
+    <p class="powered-by">
+      検索エンジンは
+      <a href="http://groonga.org/">groonga</a>
+      1.0.4
+      を使っています。
+    <p class="powered-by">
+      groongaは
+      <a href="http://groonga.rubyforge.org/">rroonga</a>
+      1.0.8
+      経由で利用しています。
+    </p>
+    <p class="powered-by">
+      Powered by
+      <a href="http://www.ruby-lang.org/">Ruby</a> 1.9.2.
+    </p>
+    <p class="powered-by">
+      <a href="http://github.com/kou/rurema-search/">るりまサーチのリポジトリ</a>
+      は
+      <a href="http://github.com/">GitHub</a>
+      上にあります。
+    </p>
+  </div>
+</body>
+</html>

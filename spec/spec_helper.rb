@@ -8,5 +8,9 @@ require 'ruri'
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
 RSpec.configure do |config|
-  
+  config.mock_with :rr
+end
+
+def fixture_path
+  @fixture_path ||= File.expand_path('../fixtures', __FILE__)
 end

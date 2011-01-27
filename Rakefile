@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'rubygems'
 require 'bundler'
 begin
@@ -15,14 +16,16 @@ Jeweler::Tasks.new do |gem|
   gem.name = "ruri"
   gem.homepage = "http://github.com/jugyo/ruri"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{the るりま shell}
+  gem.description = %Q{Ruri is the るりま shell.}
   gem.email = "jugyo.org@gmail.com"
   gem.authors = ["jugyo"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.add_runtime_dependency 'cinatra'
+  gem.add_runtime_dependency 'nokogiri'
+  gem.add_development_dependency 'rspec', "~> 2.3.0"
+  gem.add_development_dependency 'rr', "~> 1.0.2"
 end
 Jeweler::RubygemsDotOrgTasks.new
 
