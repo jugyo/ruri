@@ -40,4 +40,8 @@ describe Ruri::Search do
   describe '.parse_reference' do
     pending
   end
+
+  describe '.web_page_cache' do
+    pending
+  end
 end

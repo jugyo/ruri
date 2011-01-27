@@ -18,6 +18,19 @@ module Ruri
         @last_result ||= []
       end
 
+      def web_page_cache
+        @web_page_cache ||= {}
+      end
+
+      def open(uri)
+        puts "\e[34m=> #{uri}\e[0m"
+        if web_page_cache.key?(uri)
+          web_page_cache[uri]
+        else
+          web_page_cache[uri] = Kernel.open(uri).read
+        end
+      end
+
       def search(query, options = {})
         options = {:version => DEFAULT_VERSION, :memory => false}.merge(options)
         url = SEARCH_URL % [options[:version], ERB::Util.url_encode(query)]
