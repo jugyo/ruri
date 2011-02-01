@@ -47,8 +47,12 @@ module Ruri
         result = []
         doc = Nokogiri::HTML(html)
         doc.css('.entries').each do |dl|
-          [dl.css('.entry-name a'), dl.css('.entry-summary')].transpose.each do |link, summary|
-            result << Result.new(link.content.strip, BASE_URL + link[:href], summary.content.strip)
+          [
+            dl.css('.entry-name .signature'),
+            dl.css('.entry-document .entry-link a'),
+            dl.css('.entry-summary')
+          ].transpose.each do |name, link, summary|
+            result << Result.new(name.content.strip, BASE_URL + link[:href], summary.content.strip)
           end
         end
         result
